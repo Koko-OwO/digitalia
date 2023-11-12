@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: pie;
+  src: url(../assets/fonts/pie);
+}
+body.oscuro {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0;
+  margin: 0;
+}
+body.oscuro .hero {
+  background-image: url(../assets/fotografias/camara.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center center;
+  background-attachment: fixed;
+  position: center;
+}
+body.oscuro .hero h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.oscuro .imagenes {
+  background-image: url(../assets/fotografias/prueba.jpeg);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center center;
+  background-attachment: fixed;
+  position: center;
+}
+body.oscuro .imagenesdos {
+  background-image: url(../assets/fotografias/pruebados.jpeg);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center center;
+  background-attachment: fixed;
+  position: center;
+}
+body.oscuro .fotos img {
+  padding: 2rem 2rem 0.5rem 2rem;
+}
+body.oscuro .fotos img:hover {
+  scale: 105%;
+  transition: 1s;
+}
+body.oscuro .fotos .pie {
+  font-family: pie;
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=fotografia.css.map */

@@ -1,0 +1,91 @@
+$coloruno:#406aa8;
+$colordos:#668dd3;
+$colortres:#b686cd;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: pie;
+    src: url(../assets/fonts/pie);
+}
+
+
+body.oscuro {
+    background-color: rgba(0, 0, 0, .6);
+
+    padding: 0;
+    margin: 0;
+    
+
+
+    .hero {
+        background-image: url(../assets/fotografias/camara.jpg);
+       
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center center;
+        background-attachment: fixed;
+        position: center;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    .imagenes {
+        background-image: url(../assets/fotografias/prueba.jpeg);
+        
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center center;
+        background-attachment: fixed;
+        position: center;
+    }
+    .imagenesdos {
+        background-image: url(../assets/fotografias/pruebados.jpeg);
+       
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center center;
+        background-attachment: fixed;
+        position: center;
+    }
+
+   
+
+    .fotos {
+
+
+        img {
+            padding: 2rem 2rem .5rem 2rem;
+
+        }
+
+        img:hover {
+            scale: 105%;
+            transition: 1s;
+        }
+
+        .pie {
+            font-family: pie;
+            color: white;
+            text-align: center;
+        }
+    }
+}

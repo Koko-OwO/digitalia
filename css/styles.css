@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body.clara .hero {
+  background-image: url(../assets/fondo.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center center;
+  background-attachment: fixed;
+  position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.clara .hero .logo {
+  width: 25rem;
+  position: relative;
+  top: 50%;
+  z-index: 200;
+  top: 0;
+}
+body.clara .flecha {
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+  background-color: white;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  rotate: -90deg;
+  border-radius: 55px;
+  animation-duration: 1s;
+  animation-name: baja;
+  animation-iteration-count: infinite;
+  text-decoration: none;
+  z-index: 1000;
+}
+@keyframes baja {
+  from {
+    top: 90%;
+  }
+  50% {
+    top: 85%;
+  }
+  to {
+    top: 90%;
+  }
+}
+body.clara .logosss {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+}
+body.clara .logospadre {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+body.clara nav {
+  position: sticky;
+  top: 0px;
+  background-color: #406aa8;
+  z-index: 100;
+  margin-bottom: 5rem;
+}
+body.clara nav .logo {
+  width: 5rem;
+  height: 2rem;
+  position: absolute;
+  top: 900px;
+  z-index: 200;
+  position: sticky;
+  top: 0;
+}
+body.clara nav a {
+  text-decoration: none;
+  color: #fff;
+}
+body.clara nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.clara nav .colorofcanvas {
+  background-color: #668dd3;
+}
+body.clara nav .offcanvas-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body.clara nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body.clara nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body.clara .contrainer__card {
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  perspective: 1000px;
+  justify-content: center;
+}
+body.clara .card__father {
+  perspective: 1000px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+body.clara .card__front {
+  background-image: url(../assets/fondocard.jpg);
+  background-size: cover;
+  background-position: center;
+}
+body.clara .card__father:hover .card {
+  transform: rotateY(180deg);
+}
+body.clara .body__card_front {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+  transform: translateZ(60px);
+  display: flex;
+  color: white;
+  border-radius: 15px;
+}
+body.clara .body__card_front .foto {
+  filter: drop-shadow(5px 8px 5px black);
+}
+body.clara .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+}
+body.clara .card {
+  width: 350px;
+  height: 450px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1000ms;
+}
+body.clara .card__front,
+body.clara .card__back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 15px;
+}
+body.clara .card__back {
+  transform: rotateY(180deg);
+  color: #fff;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/fondodos.jpg);
+}
+body.clara .body__card_back {
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateZ(60px);
+  border-radius: 15px;
+}
+body.clara .body__card_back p {
+  margin-top: 30px;
+  font-size: 18px;
+}
+body.clara .body__card_back input {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background-color: #406aa8;
+  box-shadow: 1px 1px 30px -5px #668dd3;
+  border-radius: 10px;
+  transition: box-shadow 1000ms;
+}
+body.clara .body__card_back input:hover {
+  box-shadow: 10px 10px 30px -5px #406aa8;
+}
+
+.text-center {
+  font-size: 2rem;
+  padding: 1rem 8rem 1rem 8rem;
+}
+
+.text-center2 {
+  font-size: 1.4rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container__boton {
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+  min-height: 3.5rem;
+  min-width: 3.5rem;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}/*# sourceMappingURL=styles.css.map */
