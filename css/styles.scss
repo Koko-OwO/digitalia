@@ -16,7 +16,7 @@ body.clara {
     
 
     .hero {
-        background-image: url(../assets/fondo.png);
+        background-image: url(../assets/intro.gif);
        
         height: 100vh;
         background-repeat: no-repeat;
@@ -36,7 +36,7 @@ body.clara {
             position: relative;
             top: 50%;
             z-index: 200;
-           
+            filter:drop-shadow(5px 8px 1.5px black);
             top: 0;
         }
       
@@ -54,7 +54,7 @@ body.clara {
         left: 50%;  
         rotate: -90deg;
         border-radius: 55px;
-        animation-duration: 1s;
+        animation-duration: 2s;
         animation-name: baja;
         animation-iteration-count: infinite;
         text-decoration: none;
