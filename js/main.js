@@ -126,8 +126,98 @@ window.onload = function () {
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene);
 
+//testimonios
+
+// let itms = 6; // itemsPerPage
+// let stpg = 1; // startPage
+// let pltd = 4; // pageLinksToDisplay
+// let winw = window.innerWidth; 
+
+// function optionsByWindowSize() {
+// 	winw = window.innerWidth;
+// 	if (winw > 1600) { itms = 6; stpg = 1; pltd = 4; }
+// 	else if (winw > 1230) { itms = 5; stpg = 2; pltd = 4; }
+// 	else if (winw > 980) { itms = 4; stpg = 3; pltd = 4; }
+// 	else if (winw > 750) { itms = 3; stpg = 4; pltd = 4; }
+// 	else if (winw > 510) { itms = 2; stpg = 5; pltd = 4; }
+// 	else { itms = 1; stpg = 6; pltd = 1; }
+// }
+
+// function reportWindowSize() {
+// 	optionsByWindowSize();
+// 	//purePajination Script - START
+// 	if (document.readyState === "complete") {
+// 		var gallery = new purePajinate({ 
+// 			containerSelector: '.items', 
+// 			itemSelector: '.items > div', 
+// 			navigationSelector: '.pagination',
+// 			/*wrapAround: true,*/ 
+// 			pageLinksToDisplay: pltd,
+// 			showFirstLast: true,
+// 			navLabelPrev: '&nbsp;&nbsp;&nbsp;',
+// 			navLabelNext: '&nbsp;&nbsp;&nbsp;',
+// 			navLabelFirst: '&nbsp;&nbsp;&nbsp;',
+// 			navLabelLast: '&nbsp;&nbsp;&nbsp;',
+// 			itemsPerPage: itms,
+// 			startPage: stpg
+// 		});
+// 	} //purePajination Script - END
+// }
+
+// document.onreadystatechange = reportWindowSize;				
+// window.onresize = reportWindowSize;
+
+
+
+import React, { useState } from 'https://cdn.skypack.dev/react';
+import ReactDOM from 'https://cdn.skypack.dev/react-dom';
+import { TiChevronLeftOutline, TiChevronRightOutline } from 'https://cdn.skypack.dev/react-icons/ti';
+
+const CARDS = 10;
+const MAX_VISIBILITY = 3;
+
+const Card = ({ title, content }) => /*#__PURE__*/
+React.createElement("div", { className: "card" }, /*#__PURE__*/
+React.createElement("h2", null, title), /*#__PURE__*/
+React.createElement("p", null, content));
+
+
+
+const Carousel = ({ children }) => {
+  const [active, setActive] = useState(2);
+  const count = React.Children.count(children);
+
+  return /*#__PURE__*/(
+    React.createElement("div", { className: "carousel" },
+    active > 0 && /*#__PURE__*/React.createElement("button", { className: "nav left", onClick: () => setActive(i => i - 1) }, /*#__PURE__*/React.createElement(TiChevronLeftOutline, null)),
+    React.Children.map(children, (child, i) => /*#__PURE__*/
+    React.createElement("div", { className: "card-container", style: {
+        '--active': i === active ? 1 : 0,
+        '--offset': (active - i) / 3,
+        '--direction': Math.sign(active - i),
+        '--abs-offset': Math.abs(active - i) / 3,
+        'pointer-events': active === i ? 'auto' : 'none',
+        'opacity': Math.abs(active - i) >= MAX_VISIBILITY ? '0' : '1',
+        'display': Math.abs(active - i) > MAX_VISIBILITY ? 'none' : 'block' } },
+
+    child)),
+
+
+    active < count - 1 && /*#__PURE__*/React.createElement("button", { className: "nav right", onClick: () => setActive(i => i + 1) }, /*#__PURE__*/React.createElement(TiChevronRightOutline, null))));
+
+
+};
+
+const App = () => /*#__PURE__*/
+React.createElement("div", { className: "app" }, /*#__PURE__*/
+React.createElement(Carousel, null,
+[...new Array(CARDS)].map((_, i) => /*#__PURE__*/
+React.createElement(Card, { title: 'Card ' + (i + 1), content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." }))));
 
 
 
 
-        
+
+ReactDOM.render( /*#__PURE__*/
+React.createElement(App, null),
+document.body);
