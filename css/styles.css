@@ -349,4 +349,39 @@ body.clara .footer_fondo .info {
 }
 body.clara #inicio {
   background-color: white;
+}
+body.clara .videocarga {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 100%;
+  animation-name: logo;
+  animation-iteration-count: 1;
+  animation-duration: 10s;
+  display: none;
+  background-color: black;
+}
+@keyframes logo {
+  from {
+    display: block;
+    top: 0px;
+    z-index: 999;
+    opacity: 1;
+    left: 0;
+  }
+  90% {
+    display: block;
+    top: 0px;
+    z-index: 999;
+    opacity: 1;
+    left: 0;
+  }
+  to {
+    opacity: 0;
+    display: none;
+    z-index: 999;
+    left: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
