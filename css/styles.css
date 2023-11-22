@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body.clara {
+  background-color: white;
+}
 body.clara .hero {
   background-image: url(../assets/intro.gif);
   height: 100vh;
@@ -39,7 +42,7 @@ body.clara .flecha {
   animation-name: baja;
   animation-iteration-count: infinite;
   text-decoration: none;
-  z-index: 1000;
+  z-index: 900;
 }
 @keyframes baja {
   from {
@@ -238,10 +241,102 @@ body.clara .footer_fondo .logo_redes {
   box-shadow: 0px 5px 20px 0px #406aa8;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  position: relative;
+}
+body.clara .footer_fondo .logo_redes .redondouno .poppover {
+  position: absolute;
+  width: 10rem;
+  top: 170px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  transition: all 0.7s;
+  z-index: -20;
+}
+body.clara .footer_fondo .logo_redes .redondouno:hover .redes_logos {
+  padding: 20px;
+  filter: drop-shadow(5px 5px 3px #b686cd);
+}
+body.clara .footer_fondo .logo_redes .redondouno:hover .poppover {
+  position: absolute;
+  width: 10rem;
+  top: -170px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  display: inline;
+  transition: all 0.7s;
+  z-index: 10;
+}
+body.clara .footer_fondo .logo_redes .redondodos .poppover {
+  position: absolute;
+  width: 10rem;
+  top: 170px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  transition: all 0.7s;
+  z-index: -20;
+}
+body.clara .footer_fondo .logo_redes .redondodos:hover .redes_logos {
+  padding: 20px;
+  filter: drop-shadow(5px 5px 3px #b686cd);
+}
+body.clara .footer_fondo .logo_redes .redondodos:hover .poppover {
+  position: absolute;
+  width: 10rem;
+  top: -50px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  display: inline;
+  transition: all 0.7s;
+  z-index: 10;
+}
+body.clara .footer_fondo .logo_redes .redondotres .poppover {
+  position: absolute;
+  width: 10rem;
+  top: 170px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  transition: all 0.7s;
+  z-index: -20;
+}
+body.clara .footer_fondo .logo_redes .redondotres:hover .redes_logos {
+  padding: 20px;
+  filter: drop-shadow(5px 5px 3px #b686cd);
+}
+body.clara .footer_fondo .logo_redes .redondotres:hover .poppover {
+  position: absolute;
+  width: 10rem;
+  top: -50px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  display: inline;
+  transition: all 0.7s;
+  z-index: 10;
+}
+body.clara .footer_fondo .logo_redes .redondocuatro .poppover {
+  position: absolute;
+  width: 10rem;
+  top: 200px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  transition: all 0.7s;
+  z-index: -20;
+}
+body.clara .footer_fondo .logo_redes .redondocuatro:hover .redes_logos {
+  padding: 20px;
+  filter: drop-shadow(5px 5px 3px #b686cd);
+}
+body.clara .footer_fondo .logo_redes .redondocuatro:hover .poppover {
+  position: absolute;
+  width: 10rem;
+  top: 90px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  display: inline;
+  transition: all 0.7s;
+  z-index: 10;
 }
 body.clara .footer_fondo .logo_redes .redes_logos {
   padding: 20px;
-  filter: drop-shadow(5px 5px 3px #b686cd);
 }
 body.clara .footer_fondo .logo_redes a {
   display: flex;
@@ -251,4 +346,7 @@ body.clara .footer_fondo .logo_redes a {
 body.clara .footer_fondo .info {
   background-color: darkgoldenrod;
   margin: 1rem;
+}
+body.clara #inicio {
+  background-color: white;
 }/*# sourceMappingURL=styles.css.map */

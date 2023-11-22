@@ -9,6 +9,7 @@ $colortres: #b686cd;
 }
 
 body.clara {
+    background-color: white;
     .hero {
         background-image: url(../assets/intro.gif);
 
@@ -48,7 +49,7 @@ body.clara {
         animation-name: baja;
         animation-iteration-count: infinite;
         text-decoration: none;
-        z-index: 1000;
+        z-index: 900;
     }
 
     @keyframes baja {
@@ -268,11 +269,11 @@ body.clara {
     //         height: 250px;
     //         padding: 0 50px;
     //         justify-content: center;
-          
+
     //         left: 0;
     //         right: 0;
     //       }
-          
+
     //       .card {
     //         height: 150px;
     //         margin: 0 -25px;
@@ -288,7 +289,7 @@ body.clara {
     //         top: 0px;
     //         z-index: 10;
     //       }
-          
+
     //       .card-face {
     //         bottom: 0;
     //         content: "";
@@ -311,7 +312,7 @@ body.clara {
     //         right: 0;
     //         top: 0;
     //       }
-          
+
     //       .card-label {
     //         font-family: "helvetica neue", helvetica, arial, sans-serif;
     //         font-size: 24px;
@@ -319,7 +320,7 @@ body.clara {
     //         letter-spacing: -0.025em;
     //         padding: 15px 0 0 15px;
     //       }
-          
+
     //       .card:nth-child(1) .card-face {
     //         background: linear-gradient(-135deg, #ff9999, #da0b0b);
     //         box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15), inset 0 0 0 2px rgba(255, 153, 153, 0.75);
@@ -342,7 +343,7 @@ body.clara {
     //       .card:nth-child(1):hover:after {
     //         top: -175px;
     //       }
-          
+
     //       .card:nth-child(2) .card-face {
     //         background: linear-gradient(-135deg, #ff99d6, #da0b87);
     //         box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15), inset 0 0 0 2px rgba(255, 153, 214, 0.75);
@@ -365,7 +366,7 @@ body.clara {
     //       .card:nth-child(2):hover:after {
     //         top: -175px;
     //       }
-          
+
     //       .card:nth-child(3) .card-face {
     //         background: linear-gradient(-135deg, #eb99ff, #b10bda);
     //         box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15), inset 0 0 0 2px rgba(235, 153, 255, 0.75);
@@ -388,7 +389,7 @@ body.clara {
     //       .card:nth-child(3):hover:after {
     //         top: -175px;
     //       }
-          
+
     //       .card:nth-child(4) .card-face {
     //         background: linear-gradient(-135deg, #ad99ff, #350bda);
     //         box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15), inset 0 0 0 2px rgba(173, 153, 255, 0.75);
@@ -411,7 +412,7 @@ body.clara {
     //       .card:nth-child(4):hover:after {
     //         top: -175px;
     //       }
-          
+
     //       .card:nth-child(5) .card-face {
     //         background: linear-gradient(-135deg, #99c2ff, #0b5eda);
     //         box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15), inset 0 0 0 2px rgba(153, 194, 255, 0.75);
@@ -434,7 +435,7 @@ body.clara {
     //       .card:nth-child(5):hover:after {
     //         top: -175px;
     //       }
-          
+
     //       .card:nth-child(6) .card-face {
     //         background: linear-gradient(-135deg, #99ffff, #0bdada);
     //         box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15), inset 0 0 0 2px rgba(153, 255, 255, 0.75);
@@ -457,7 +458,7 @@ body.clara {
     //       .card:nth-child(6):hover:after {
     //         top: -175px;
     //       }
-          
+
     //       .card:nth-child(7) .card-face {
     //         background: linear-gradient(-135deg, #99ffc2, #0bda5e);
     //         box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15), inset 0 0 0 2px rgba(153, 255, 194, 0.75);
@@ -480,7 +481,7 @@ body.clara {
     //       .card:nth-child(7):hover:after {
     //         top: -175px;
     //       }
-          
+
     //       .card:nth-child(8) .card-face {
     //         background: linear-gradient(-135deg, #adff99, #35da0b);
     //         box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15), inset 0 0 0 2px rgba(173, 255, 153, 0.75);
@@ -503,7 +504,7 @@ body.clara {
     //       .card:nth-child(8):hover:after {
     //         top: -175px;
     //       }
-          
+
     //       .card:nth-child(9) .card-face {
     //         background: linear-gradient(-135deg, #ebff99, #b1da0b);
     //         box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15), inset 0 0 0 2px rgba(235, 255, 153, 0.75);
@@ -526,7 +527,7 @@ body.clara {
     //       .card:nth-child(9):hover:after {
     //         top: -175px;
     //       }
-          
+
     //       .card:nth-child(10) .card-face {
     //         background: linear-gradient(-135deg, #ffd699, #da870b);
     //         box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.15), inset 0 0 0 2px rgba(255, 214, 153, 0.75);
@@ -549,7 +550,7 @@ body.clara {
     //       .card:nth-child(10):hover:after {
     //         top: -175px;
     //       }
-          
+
     //       @-webkit-keyframes fade {
     //         0% {
     //           opacity: 0.9;
@@ -560,7 +561,7 @@ body.clara {
     //           transform: scale(1.15);
     //         }
     //       }
-          
+
     //       @keyframes fade {
     //         0% {
     //           opacity: 0.9;
@@ -572,44 +573,199 @@ body.clara {
     //         }
     //       }
     // }
-footer {
-    background-color: $colordos;
-}
-  .footer_fondo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+    footer {
+        background-color: $colordos;
+    }
+    .footer_fondo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
 
-    .logo_redes {
-        background-color: rgb(194, 189, 189);
-        width: 25rem;
-        height: 25rem;
-        border-radius: 50%;
-        box-shadow: 0px 5px 20px 0px $coloruno;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        .logo_redes {
+            background-color: rgb(194, 189, 189);
+            width: 25rem;
+            height: 25rem;
+            border-radius: 50%;
+            box-shadow: 0px 5px 20px 0px $coloruno;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            position: relative;
 
-        .redes_logos {
-            
-            padding: 20px;
-            filter: drop-shadow(5px 5px 3px $colortres);
+            .redondouno {
+                .poppover {
+                    position: absolute;
+                    width: 10rem;
+                    top: 170px;
+                    left: 50;
+                    filter: drop-shadow(4px 5px 5px $coloruno);
 
+                    transition: all 0.7s;
+                    z-index: -20;
+                }
+            }
+
+            .redondouno:hover {
+                .redes_logos {
+                    padding: 20px;
+                    filter: drop-shadow(5px 5px 3px $colortres);
+                }
+                .poppover {
+                    position: absolute;
+                    width: 10rem;
+                    top: -170px;
+                    left: 50;
+                    filter: drop-shadow(4px 5px 5px $coloruno);
+                    display: inline;
+                    transition: all 0.7s;
+                    z-index: 10;
+                }
+            }
+
+            .redondodos {
+                .poppover {
+                    position: absolute;
+                    width: 10rem;
+                    top: 170px;
+                    left: 50;
+                    filter: drop-shadow(4px 5px 5px $coloruno);
+
+                    transition: all 0.7s;
+                    z-index: -20;
+                }
+            }
+
+            .redondodos:hover {
+                .redes_logos {
+                    padding: 20px;
+                    filter: drop-shadow(5px 5px 3px $colortres);
+                }
+                .poppover {
+                    position: absolute;
+                    width: 10rem;
+                    top: -50px;
+                    left: 50;
+                    filter: drop-shadow(4px 5px 5px $coloruno);
+                    display: inline;
+                    transition: all 0.7s;
+                    z-index: 10;
+                }
+            }
+
+            .redondotres {
+                .poppover {
+                    position: absolute;
+                    width: 10rem;
+                    top: 170px;
+                    left: 50;
+                    filter: drop-shadow(4px 5px 5px $coloruno);
+
+                    transition: all 0.7s;
+                    z-index: -20;
+                }
+            }
+
+            .redondotres:hover {
+                .redes_logos {
+                    padding: 20px;
+                    filter: drop-shadow(5px 5px 3px $colortres);
+                }
+                .poppover {
+                    position: absolute;
+                    width: 10rem;
+                    top: -50px;
+                    left: 50;
+                    filter: drop-shadow(4px 5px 5px $coloruno);
+                    display: inline;
+                    transition: all 0.7s;
+                    z-index: 10;
+                }
+            }
+
+            .redondocuatro {
+                .poppover {
+                    position: absolute;
+                    width: 10rem;
+                    top: 200px;
+                    left: 50;
+                    filter: drop-shadow(4px 5px 5px $coloruno);
+
+                    transition: all 0.7s;
+                    z-index: -20;
+                }
+            }
+
+            .redondocuatro:hover {
+                .redes_logos {
+                    padding: 20px;
+                    filter: drop-shadow(5px 5px 3px $colortres);
+                }
+                .poppover {
+                    position: absolute;
+                    width: 10rem;
+                    top: 90px;
+                    left: 50;
+                    filter: drop-shadow(4px 5px 5px $coloruno);
+                    display: inline;
+                    transition: all 0.7s;
+                    z-index: 10;
+                }
+            }
+
+            .redes_logos {
+                padding: 20px;
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
-        
 
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .info {
+            background-color: darkgoldenrod;
+            margin: 1rem;
         }
     }
 
-    .info {
-        background-color: darkgoldenrod;
-        margin: 1rem;
+    #inicio {
+        background-color: white;
     }
-  }
+    // .videocarga {
+    //     z-index: 999;
+    //     position: fixed;
+    //     width: 100%;
+    //     height: 100vh;
+    //     top: 0px;
+    //     left: 100%;
+    //     animation-name: logo;
+    //     animation-iteration-count: 1;
+    //     animation-duration: 10s;
+    //     display: none;
+    //     background-color: black;
+    // }
 
+    // @keyframes logo {
+    //     from {
+    //         display: block;
+    //         top: 0px;
+    //         z-index: 999;
+    //         opacity: 1;
+    //         left: 0;
+    //     }
+    //     90% {
+    //         display: block;
+    //         top: 0px;
+    //         z-index: 999;
+    //         opacity: 1;
+    //         left: 0;
+    //     }
+    //     to {
+    //         opacity: 0;
+    //         display: none;
+    //         z-index: 999;
+    //         left: 100%;
+    //     }
+    // }
 }
-
