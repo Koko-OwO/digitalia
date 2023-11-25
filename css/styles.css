@@ -4,8 +4,30 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: titulos;
+  src: url(../assets/fonts/ViceCitySans-Bold.otf);
+}
+@font-face {
+  font-family: subtitulos;
+  src: url(../assets/fonts/ViceCitySans-Light.otf);
+}
+@font-face {
+  font-family: parrafo;
+  src: url(../assets/fonts/JosefinSans-VariableFont_wght.ttf);
+}
+.custom-cursor {
+  cursor: url("../assets/cursor.svg") 32 32, pointer;
+}
+
 body.clara {
   background-color: white;
+}
+body.clara h1 {
+  font-family: titulos;
+}
+body.clara p {
+  font-family: parrafo;
 }
 body.clara .hero {
   background-image: url(../assets/intro.gif);
@@ -71,6 +93,8 @@ body.clara nav {
   background-color: #406aa8;
   z-index: 100;
   margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 body.clara nav .logo {
   width: 5rem;
@@ -92,6 +116,9 @@ body.clara nav ul {
 }
 body.clara nav .colorofcanvas {
   background-color: #668dd3;
+}
+body.clara nav .canvas-body {
+  z-index: 50;
 }
 body.clara nav .offcanvas-header {
   display: flex;
@@ -125,7 +152,7 @@ body.clara .card__father {
   justify-content: center;
 }
 body.clara .card__front {
-  background-image: url(../assets/fondocard.jpg);
+  background-image: url(../assets/fondo.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -226,6 +253,7 @@ body.clara .container__boton {
 }
 body.clara footer {
   background-color: #668dd3;
+  color: white;
 }
 body.clara .footer_fondo {
   display: flex;
@@ -344,44 +372,20 @@ body.clara .footer_fondo .logo_redes a {
   align-items: center;
 }
 body.clara .footer_fondo .info {
-  background-color: darkgoldenrod;
+  color: white;
   margin: 1rem;
+  text-align: center;
+  padding: 20px;
+  width: 50rem;
+  font-size: 2rem;
 }
 body.clara #inicio {
   background-color: white;
 }
-body.clara .videocarga {
-  z-index: 999;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0px;
-  left: 100%;
-  animation-name: logo;
-  animation-iteration-count: 1;
-  animation-duration: 10s;
-  display: none;
-  background-color: black;
-}
-@keyframes logo {
-  from {
-    display: block;
-    top: 0px;
-    z-index: 999;
-    opacity: 1;
-    left: 0;
-  }
-  90% {
-    display: block;
-    top: 0px;
-    z-index: 999;
-    opacity: 1;
-    left: 0;
-  }
-  to {
-    opacity: 0;
-    display: none;
-    z-index: 999;
-    left: 100%;
-  }
+body.clara .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */

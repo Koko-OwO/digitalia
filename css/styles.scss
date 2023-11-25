@@ -6,10 +6,34 @@ $colortres: #b686cd;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
+
+@font-face {
+    font-family: titulos;
+    src: url(../assets/fonts/ViceCitySans-Bold.otf);
+}
+@font-face {
+    font-family: subtitulos;
+    src: url(../assets/fonts/ViceCitySans-Light.otf);
+}
+@font-face {
+    font-family: parrafo;
+    src: url(../assets/fonts/JosefinSans-VariableFont_wght.ttf);
+}
+.custom-cursor {
+    cursor: url("../assets/cursor.svg") 32 32,
+      pointer;
+  }
 
 body.clara {
     background-color: white;
+    h1 {
+        font-family: titulos;
+    }
+    p {
+        font-family: parrafo;
+    }
     .hero {
         background-image: url(../assets/intro.gif);
 
@@ -82,6 +106,8 @@ body.clara {
         background-color: $coloruno;
         z-index: 100;
         margin-bottom: 5rem;
+        display: flex;
+        flex-wrap: wrap;
 
         .logo {
             width: 5rem;
@@ -106,6 +132,11 @@ body.clara {
 
         .colorofcanvas {
             background-color: $colordos;
+          
+        }
+        .canvas-body {
+            z-index: 50;
+
         }
 
         .offcanvas-header {
@@ -146,7 +177,7 @@ body.clara {
     }
 
     .card__front {
-        background-image: url(../assets/fondocard.jpg);
+        background-image: url(../assets/fondo.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -575,6 +606,7 @@ body.clara {
     // }
     footer {
         background-color: $colordos;
+        color: white;
     }
     .footer_fondo {
         display: flex;
@@ -724,48 +756,61 @@ body.clara {
         }
 
         .info {
-            background-color: darkgoldenrod;
+           color: white;
             margin: 1rem;
+            text-align: center;
+            padding: 20px;
+            width: 50rem;
+            font-size: 2rem;
         }
     }
 
     #inicio {
         background-color: white;
     }
-    .videocarga {
-        z-index: 999;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        top: 0px;
-        left: 100%;
-        animation-name: logo;
-        animation-iteration-count: 1;
-        animation-duration: 10s;
-        display: none;
-        background-color: black;
-    }
+    // .videocarga {
+    //     z-index: 999;
+    //     position: fixed;
+    //     width: 100%;
+    //     height: 100vh;
+    //     top: 0px;
+    //     left: 100%;
+    //     animation-name: logo;
+    //     animation-iteration-count: 1;
+    //     animation-duration: 10s;
+    //     display: none;
+    //     background-color: black;
+    // }
 
-    @keyframes logo {
-        from {
-            display: block;
-            top: 0px;
-            z-index: 999;
-            opacity: 1;
-            left: 0;
-        }
-        90% {
-            display: block;
-            top: 0px;
-            z-index: 999;
-            opacity: 1;
-            left: 0;
-        }
-        to {
-            opacity: 0;
-            display: none;
-            z-index: 999;
-            left: 100%;
-        }
+    // @keyframes logo {
+    //     from {
+    //         display: block;
+    //         top: 0px;
+    //         z-index: 999;
+    //         opacity: 1;
+    //         left: 0;
+    //     }
+    //     90% {
+    //         display: block;
+    //         top: 0px;
+    //         z-index: 999;
+    //         opacity: 1;
+    //         left: 0;
+    //     }
+    //     to {
+    //         opacity: 0;
+    //         display: none;
+    //         z-index: 999;
+    //         left: 100%;
+    //     }
+    // }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30rem;
+        color: white;
+
     }
 }
