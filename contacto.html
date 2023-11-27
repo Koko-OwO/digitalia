@@ -1,27 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/contacto.css">
-  <title>Contacto - Digitalia</title>
+  <title>Digitalia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contacto.css">
+  
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
-<body>
-  <div class="formulario-container">
-    <h2>Contacto</h2>
-    <form id="contactoForm" action="enviar_formulario.php" method="post">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
 
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required>
+<body class="custom-cursor">
 
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" required></textarea>
 
-      <button type="submit" onclick="enviarFormulario()">Enviar</button>
-    </form>
+
+
+
+  <div class="container waos ">
+    <div class="row ">
+      <div class="col-4  lao">
+        <img src="assets/svg/digi.svg" alt="" width="100%">
+      </div>
+      <div class="col-8 row layer">
+
+        <div class="formulario-container col-12">
+          <h2 class="col-12 text-center my-2">Contacto</h2>
+          <form class="col-12 text-center my-2" id="contactoForm" action="enviar_formulario.php" method="post">
+            <label class="col-12 text-center my-2" for="nombre">Nombre:</label>
+            <input class="col-12 text-center my-2" type="text" id="nombre" name="nombre" required>
+
+            <label class="col-12 text-center my-2" for="email">Correo electrónico:</label>
+            <input class="col-12 text-center my-2" type="email" id="email" name="email" required>
+
+            <label class="col-12 text-center my-2" for="mensaje">Mensaje:</label>
+            <textarea class="col-12 text-center my-2" id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit" onclick="enviarFormulario()">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+  <footer class="footer container-fluid mt-5">
+    <section class="row footer_fondo">
+        <div class="col-12 contact">
+            <h1>Contáctanos</h1>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mt-5 mb-5 logo_redes d-flex justify-content-center aling-items-center row">
+
+            <a  class="col-12 redondouno" href="">
+                <img src="assets/svg/you.svg" width="100" alt="" class="redes_logos" >
+                <div class="poppover">
+                    <img src="assets/svg/youtubeqr.svg" alt="" width="100%">
+                </div>
+            </a>
+            <a class="col-6 redondodos">
+                <img src="assets/svg/tiktok.svg" width="100" alt="" class="redes_logos">
+                <div class="poppover">
+                    <img src="assets/svg/youtubeqr.svg" alt="" width="100%">
+                </div>
+            </a>
+            <a class="col-6 redondotres">
+                <img src="assets/svg/ig.svg" width="100" alt="" class="redes_logos">
+                <div class="poppover">
+                    <img src="assets/svg/youtubeqr.svg" alt="" width="100%">
+                </div>
+            </a>
+
+            <a  class="col-12 redondocuatro" href="">
+                <img src="assets/svg/face.svg" width="100" alt="" class="redes_logos" >
+                <div class="poppover">
+                    <img src="assets/svg/youtubeqr.svg" alt="" width="100%">
+                </div>
+            </a>
+            
+        </div>
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 mt-5 mb-5 info"><p>
+            Gracias por visitarnos.
+
+Tu apoyo es fundamental para nosotros.
+
+Esperamos que disfrutes de tu experiencia en nuestro sitio
+
+web y que encuentres todo lo que necesitas.
+Si tienes alguna pregunta o comentario,
+
+no dudes en ponerte en contacto con nosotros.
+
+¡Apreciamos tu confianza en nosotros!
+        </p></div>
+    </section>
+
+    <section class="row patas">
+        <div class="col-6 d-flex justify-content-center align-items-center mt-5 mb-5"><img src="assets/Logo Digitalia en negativo.png" alt="" width="25%"></div>
+        <p class="col-6 d-flex justify-content-center align-items-center mt-5 mb-5">Todos los derechos reservados &copy; 2023 Digitalia, Digitalia.com.co</p>
+    </section>
+
+</footer>
+
+ 
   <script src="js/contacto.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </body>
+
 </html>

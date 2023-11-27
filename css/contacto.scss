@@ -1,65 +1,235 @@
+$coloruno: #406aa8;
+$colordos: #668dd3;
+$colortres: #b686cd;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: titulos;
+  src: url(../assets/fonts/ViceCitySans-Bold.otf);
+}
+@font-face {
+  font-family: subtitulos;
+  src: url(../assets/fonts/ViceCitySans-Light.otf);
+}
+@font-face {
+  font-family: parrafo;
+  src: url(../assets/fonts/JosefinSans-VariableFont_wght.ttf);
+}
+.custom-cursor {
+  cursor: url("../assets/cursor.svg") 32 32, pointer;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+
+  .waos {
+    border-radius: 50px;
+    box-shadow: 5px 5px 30px 5px black;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    align-items: center;
+    height: 30rem;
+    margin-top: 5rem;
+
+    .lao {
+      filter: drop-shadow(5px 8px 10px black);
+    }
+    
+    
+    h2 {
+      text-align: center;
+      font-family: titulos;
+    }
+    label {
+      font-family:parrafo;
+    }
+
+    textarea {
+      max-height: 2rem;
+      min-height: 2rem;
+    }
   }
-  
-  .formulario-container {
-    max-width: 400px;
-    width: 90%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.5s ease-in-out;
-  }
-  
-  form {
+  .layer {
+    
+    
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
-  label {
-    margin-bottom: 8px;
-  }
-  
-  input,
-  textarea {
-    margin-bottom: 16px;
-    padding: 8px;
-  }
-  
-  button {
-    background-color: #4caf50;
+
+  footer {
+    background-color: $colordos;
     color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
   }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .formulario-container {
-      width: 100%;
+  .footer_fondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    .logo_redes {
+      background-color: rgb(194, 189, 189);
+      width: 25rem;
+      height: 25rem;
+      border-radius: 50%;
+      box-shadow: 0px 5px 20px 0px $coloruno;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      position: relative;
+
+      .redondouno {
+        .poppover {
+          position: absolute;
+          width: 10rem;
+          top: 170px;
+          left: 50;
+          filter: drop-shadow(4px 5px 5px $coloruno);
+
+          transition: all 0.7s;
+          z-index: -20;
+        }
+      }
+
+      .redondouno:hover {
+        .redes_logos {
+          padding: 20px;
+          filter: drop-shadow(5px 5px 3px $colortres);
+        }
+        .poppover {
+          position: absolute;
+          width: 10rem;
+          top: -170px;
+          left: 50;
+          filter: drop-shadow(4px 5px 5px $coloruno);
+          display: inline;
+          transition: all 0.7s;
+          z-index: 10;
+        }
+      }
+
+      .redondodos {
+        .poppover {
+          position: absolute;
+          width: 10rem;
+          top: 170px;
+          left: 50;
+          filter: drop-shadow(4px 5px 5px $coloruno);
+
+          transition: all 0.7s;
+          z-index: -20;
+        }
+      }
+
+      .redondodos:hover {
+        .redes_logos {
+          padding: 20px;
+          filter: drop-shadow(5px 5px 3px $colortres);
+        }
+        .poppover {
+          position: absolute;
+          width: 10rem;
+          top: -50px;
+          left: 50;
+          filter: drop-shadow(4px 5px 5px $coloruno);
+          display: inline;
+          transition: all 0.7s;
+          z-index: 10;
+        }
+      }
+
+      .redondotres {
+        .poppover {
+          position: absolute;
+          width: 10rem;
+          top: 170px;
+          left: 50;
+          filter: drop-shadow(4px 5px 5px $coloruno);
+
+          transition: all 0.7s;
+          z-index: -20;
+        }
+      }
+
+      .redondotres:hover {
+        .redes_logos {
+          padding: 20px;
+          filter: drop-shadow(5px 5px 3px $colortres);
+        }
+        .poppover {
+          position: absolute;
+          width: 10rem;
+          top: -50px;
+          left: 50;
+          filter: drop-shadow(4px 5px 5px $coloruno);
+          display: inline;
+          transition: all 0.7s;
+          z-index: 10;
+        }
+      }
+
+      .redondocuatro {
+        .poppover {
+          position: absolute;
+          width: 10rem;
+          top: 200px;
+          left: 50;
+          filter: drop-shadow(4px 5px 5px $coloruno);
+
+          transition: all 0.7s;
+          z-index: -20;
+        }
+      }
+
+      .redondocuatro:hover {
+        .redes_logos {
+          padding: 20px;
+          filter: drop-shadow(5px 5px 3px $colortres);
+        }
+        .poppover {
+          position: absolute;
+          width: 10rem;
+          top: 90px;
+          left: 50;
+          filter: drop-shadow(4px 5px 5px $coloruno);
+          display: inline;
+          transition: all 0.7s;
+          z-index: 10;
+        }
+      }
+
+      .redes_logos {
+        padding: 20px;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .info {
+      color: white;
+      margin: 1rem;
+      text-align: center;
+      padding: 20px;
+      width: 50rem;
+      font-size: 2rem;
     }
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+
+  #inicio {
+    background-color: white;
   }
-  
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    color: white;
+  }
+}

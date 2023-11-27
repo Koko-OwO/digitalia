@@ -1,63 +1,188 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+* {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: titulos;
+  src: url(../assets/fonts/ViceCitySans-Bold.otf);
+}
+@font-face {
+  font-family: subtitulos;
+  src: url(../assets/fonts/ViceCitySans-Light.otf);
+}
+@font-face {
+  font-family: parrafo;
+  src: url(../assets/fonts/JosefinSans-VariableFont_wght.ttf);
+}
+.custom-cursor {
+  cursor: url("../assets/cursor.svg") 32 32, pointer;
+}
+
+body .waos {
+  border-radius: 50px;
+  box-shadow: 5px 5px 30px 5px black;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: #f4f4f4;
+  align-items: center;
+  height: 30rem;
+  margin-top: 5rem;
 }
-
-.formulario-container {
-  max-width: 400px;
-  width: 90%;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 0.5s ease-in-out;
+body .waos .lao {
+  filter: drop-shadow(5px 8px 10px black);
 }
-
-form {
+body .waos h2 {
+  text-align: center;
+  font-family: titulos;
+}
+body .waos label {
+  font-family: parrafo;
+}
+body .waos textarea {
+  max-height: 2rem;
+  min-height: 2rem;
+}
+body .layer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-label {
-  margin-bottom: 8px;
-}
-
-input,
-textarea {
-  margin-bottom: 16px;
-  padding: 8px;
-}
-
-button {
-  background-color: #4caf50;
+body footer {
+  background-color: #668dd3;
   color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
 }
-
-button:hover {
-  background-color: #45a049;
+body .footer_fondo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
-
-@media screen and (max-width: 600px) {
-  .formulario-container {
-    width: 100%;
-  }
+body .footer_fondo .logo_redes {
+  background-color: rgb(194, 189, 189);
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  box-shadow: 0px 5px 20px 0px #406aa8;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+body .footer_fondo .logo_redes .redondouno .poppover {
+  position: absolute;
+  width: 10rem;
+  top: 170px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  transition: all 0.7s;
+  z-index: -20;
+}
+body .footer_fondo .logo_redes .redondouno:hover .redes_logos {
+  padding: 20px;
+  filter: drop-shadow(5px 5px 3px #b686cd);
+}
+body .footer_fondo .logo_redes .redondouno:hover .poppover {
+  position: absolute;
+  width: 10rem;
+  top: -170px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  display: inline;
+  transition: all 0.7s;
+  z-index: 10;
+}
+body .footer_fondo .logo_redes .redondodos .poppover {
+  position: absolute;
+  width: 10rem;
+  top: 170px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  transition: all 0.7s;
+  z-index: -20;
+}
+body .footer_fondo .logo_redes .redondodos:hover .redes_logos {
+  padding: 20px;
+  filter: drop-shadow(5px 5px 3px #b686cd);
+}
+body .footer_fondo .logo_redes .redondodos:hover .poppover {
+  position: absolute;
+  width: 10rem;
+  top: -50px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  display: inline;
+  transition: all 0.7s;
+  z-index: 10;
+}
+body .footer_fondo .logo_redes .redondotres .poppover {
+  position: absolute;
+  width: 10rem;
+  top: 170px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  transition: all 0.7s;
+  z-index: -20;
+}
+body .footer_fondo .logo_redes .redondotres:hover .redes_logos {
+  padding: 20px;
+  filter: drop-shadow(5px 5px 3px #b686cd);
+}
+body .footer_fondo .logo_redes .redondotres:hover .poppover {
+  position: absolute;
+  width: 10rem;
+  top: -50px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  display: inline;
+  transition: all 0.7s;
+  z-index: 10;
+}
+body .footer_fondo .logo_redes .redondocuatro .poppover {
+  position: absolute;
+  width: 10rem;
+  top: 200px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  transition: all 0.7s;
+  z-index: -20;
+}
+body .footer_fondo .logo_redes .redondocuatro:hover .redes_logos {
+  padding: 20px;
+  filter: drop-shadow(5px 5px 3px #b686cd);
+}
+body .footer_fondo .logo_redes .redondocuatro:hover .poppover {
+  position: absolute;
+  width: 10rem;
+  top: 90px;
+  left: 50;
+  filter: drop-shadow(4px 5px 5px #406aa8);
+  display: inline;
+  transition: all 0.7s;
+  z-index: 10;
+}
+body .footer_fondo .logo_redes .redes_logos {
+  padding: 20px;
+}
+body .footer_fondo .logo_redes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .footer_fondo .info {
+  color: white;
+  margin: 1rem;
+  text-align: center;
+  padding: 20px;
+  width: 50rem;
+  font-size: 2rem;
+}
+body #inicio {
+  background-color: white;
+}
+body .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  color: white;
 }/*# sourceMappingURL=contacto.css.map */
