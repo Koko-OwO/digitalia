@@ -22,7 +22,7 @@ $colortres: #b686cd;
     src: url(../assets/fonts/JosefinSans-VariableFont_wght.ttf);
 }
 .custom-cursor {
-    cursor: url("../assets/cursor.svg") 32 32,
+    cursor: url("../assets/cursor.svg"),
       pointer;
   }
 
@@ -768,42 +768,42 @@ body.clara {
     #inicio {
         background-color: white;
     }
-    // .videocarga {
-    //     z-index: 999;
-    //     position: fixed;
-    //     width: 100%;
-    //     height: 100vh;
-    //     top: 0px;
-    //     left: 100%;
-    //     animation-name: logo;
-    //     animation-iteration-count: 1;
-    //     animation-duration: 10s;
-    //     display: none;
-    //     background-color: black;
-    // }
+    .videocarga {
+        z-index: 999;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0px;
+        left: 100%;
+        animation-name: logo;
+        animation-iteration-count: 1;
+        animation-duration: 10s;
+        display: none;
+        background-color: black;
+    }
 
-    // @keyframes logo {
-    //     from {
-    //         display: block;
-    //         top: 0px;
-    //         z-index: 999;
-    //         opacity: 1;
-    //         left: 0;
-    //     }
-    //     90% {
-    //         display: block;
-    //         top: 0px;
-    //         z-index: 999;
-    //         opacity: 1;
-    //         left: 0;
-    //     }
-    //     to {
-    //         opacity: 0;
-    //         display: none;
-    //         z-index: 999;
-    //         left: 100%;
-    //     }
-    // }
+    @keyframes logo {
+        from {
+            display: block;
+            top: 0px;
+            z-index: 999;
+            opacity: 1;
+            left: 0;
+        }
+        90% {
+            display: block;
+            top: 0px;
+            z-index: 999;
+            opacity: 1;
+            left: 0;
+        }
+        to {
+            opacity: 0;
+            display: none;
+            z-index: 999;
+            left: 100%;
+        }
+    }
 
     .contact {
         display: flex;

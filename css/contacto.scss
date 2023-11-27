@@ -21,44 +21,113 @@ $colortres: #b686cd;
   src: url(../assets/fonts/JosefinSans-VariableFont_wght.ttf);
 }
 .custom-cursor {
-  cursor: url("../assets/cursor.svg") 32 32, pointer;
+  cursor: url("../assets/cursor.svg"), pointer;
 }
 
 body {
+  .container-fluid {
+    background-color: $coloruno;
+    height: auto;
 
+    .nav {
+      height: 6rem;
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: titulos;
+        font-size: 2rem;
+      }
+    }
+
+    .logo {
+      width: 7rem;
+      height: 3rem;
+    }
+  }
+
+  .formulario-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
   .waos {
     border-radius: 50px;
     box-shadow: 5px 5px 30px 5px black;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30rem;
+    height: auto;
     margin-top: 5rem;
 
     .lao {
       filter: drop-shadow(5px 8px 10px black);
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
     }
-    
-    
+
     h2 {
       text-align: center;
       font-family: titulos;
     }
     label {
-      font-family:parrafo;
+      font-family: parrafo;
+    }
+    input {
+      border-radius: 2px;
+      box-shadow: 2px 2px 2px 2px $colortres;
+      border: none;
     }
 
     textarea {
       max-height: 2rem;
       min-height: 2rem;
+
+      border-radius: 2px;
+      box-shadow: 2px 2px 2px 2px $colortres;
+      border: none;
     }
   }
   .layer {
-    
-    
     display: flex;
     justify-content: center;
     align-items: center;
+
+    button {
+      border: none;
+      text-decoration: none;
+      background-color: $colordos;
+      color: white  ;
+      border-radius: 5px;
+     
+      padding: 5px;
+      margin-top: 20px;
+      font-family: parrafo;
+    }
+
+    .button_slide {
+      color: #FFF;
+      border: 2px solid rgb(216, 2, 134);
+ 
+      padding: 18px 36px;
+      display: inline-block;
+   
+      font-size: 14px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 #D80286;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.4s;
+    }
+    
+ 
+    
+    .slide_right:hover {
+      box-shadow: inset 400px 0 0 0 #D80286;
+    }
+  
   }
 
   footer {
