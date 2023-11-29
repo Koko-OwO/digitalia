@@ -1,14 +1,32 @@
 // Espera a que la página esté completamente cargada
 window.onload = function () {
-    // Oculta la pantalla de precarga
-    document.getElementById("preloader").style.display = "none";
-    // Muestra el contenido de la página
-    document.getElementById("contenido").style.display = "block";
+  // Oculta la pantalla de precarga
+  document.getElementById("preloader").style.display = "none";
+  // Muestra el contenido de la página
+  document.getElementById("contenido").style.display = "block";
 };
 
-  // Parallax Code
-  var scene = document.getElementById('scene');
-  var parallax = new Parallax(scene);
+
+
+
+const animationImages = document.querySelectorAll('.gatoSubiendo');
+
+function animateIn() {
+animationImages.forEach(image => {
+  const elementTop = image.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (elementTop < windowHeight) {
+    image.classList.add('animate-in');
+  }
+});
+}
+
+window.addEventListener('scroll', animateIn);
+window.addEventListener('load', animateIn);
+
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
 
 // var image = document.getElementsByClassName('thumbnail');
 // new simpleParallax(image, {
@@ -126,7 +144,7 @@ window.onload = function () {
 
 
 
-      
+    
 
 //testimonios
 

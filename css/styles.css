@@ -178,7 +178,7 @@ body.clara .bg {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.75);
   border-radius: 15px;
 }
 body.clara .card {
@@ -391,7 +391,7 @@ body.clara .videocarga {
   left: 100%;
   animation-name: logo;
   animation-iteration-count: 1;
-  animation-duration: 10s;
+  animation-duration: 6s;
   display: none;
   background-color: black;
 }
@@ -423,4 +423,15 @@ body.clara .contact {
   align-items: center;
   height: 30rem;
   color: white;
+}
+body.clara .gatoSubiendo {
+  position: relative;
+  top: 70px;
+  /* transform: translateX(0%); */
+  opacity: 0;
+  transition: top 1s ease-in, opacity 1s ease-in;
+}
+body.clara .animate-in {
+  top: 0;
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */
