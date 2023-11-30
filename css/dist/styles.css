@@ -435,3 +435,6 @@ body.clara .animate-in {
   top: 0;
   opacity: 1;
 }
+body.clara .nosotros {
+  height: auto;
+}
