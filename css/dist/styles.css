@@ -25,9 +25,17 @@ body.clara {
 }
 body.clara h1 {
   font-family: titulos;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 body.clara p {
   font-family: parrafo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 body.clara .hero {
   background-image: url(../assets/intro.gif);
@@ -437,4 +445,8 @@ body.clara .animate-in {
 }
 body.clara .nosotros {
   height: auto;
+}
+body.clara figcaption {
+  font-family: parrafo;
+  text-align: center;
 }

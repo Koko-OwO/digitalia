@@ -30,9 +30,17 @@ body.clara {
     background-color: white;
     h1 {
         font-family: titulos;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     p {
         font-family: parrafo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .hero {
         background-image: url(../assets/intro.gif);
@@ -522,5 +530,9 @@ body.clara {
 
       .nosotros {
         height: auto;
+      }
+      figcaption {
+        font-family:parrafo;
+        text-align:center;
       }
 }
