@@ -25,6 +25,55 @@ animationImages.forEach(image => {
 window.addEventListener('scroll', animateIn);
 window.addEventListener('load', animateIn);
 
+
+
+// const checkbox = document.getElementById("checkbox");
+// const professional = document.getElementById("professional");
+// const master = document.getElementById("master");
+// const basic = document.getElementById("basic");
+
+// checkbox.addEventListener("click", () => {
+//   basic.textContent = basic.textContent === "$199.99" ? "$19.99" : "$199.99";
+//   professional.textContent =
+//     professional.textContent === "$249.99" ? "$24.99 " : "$249.99";
+//   master.textContent = master.textContent === "$399.99" ? "$39.99" : "$399.99";
+// });
+
+
+
+  // Obtener todos los elementos con la clase "miElemento"
+  var elementos = document.querySelectorAll(".losque");
+
+  // Agregar eventos a cada elemento
+  elementos.forEach(function(elemento) {
+    elemento.addEventListener("mouseover", function() {
+      elemento.classList.remove("shadow");
+      elemento.classList.add("active");
+    });
+
+    elemento.addEventListener("mouseout", function() {
+      elemento.classList.remove("active");
+      elemento.classList.add("shadow");
+    });
+  });
+
+
+    // Obtener todos los elementos con la clase "miElemento"
+    var elemen = document.querySelectorAll(".btn");
+
+    // Agregar eventos a cada elemento
+    elemen.forEach(function(elementok) {
+      elementok.addEventListener("mouseover", function() {
+       
+        elementok.classList.add("active-btn");
+      });
+  
+      elementok.addEventListener("mouseout", function() {
+        elementok.classList.remove("active-btn");
+        
+      });
+    });
+
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);
 
