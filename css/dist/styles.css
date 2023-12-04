@@ -498,14 +498,14 @@ body.clara section .cards {
   align-items: center;
   flex-wrap: wrap;
 }
-body.clara section .card {
+body.clara section .cardo {
   background: #fff;
   color: #6d708d;
   border-radius: 0.8rem;
   height: auto;
   margin: 20px;
 }
-body.clara section .cards .card.active {
+body.clara section .cards .cardo.active {
   background: linear-gradient(135deg, #a3a8f0 0%, #696fdd 100%);
   color: #fff;
   display: flex;
@@ -536,7 +536,7 @@ body.clara section ul li.price {
 body.clara section .shadow {
   box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
 }
-body.clara section .card.active .price {
+body.clara section .cardo.active .price {
   color: #fff;
 }
 body.clara section .btn {
@@ -560,12 +560,14 @@ body.clara section .active-btn {
 body.clara section .bottom-bar {
   border-bottom: 2px solid rgba(214, 214, 220, 0.582);
   text-align: center;
+  font-family: parrafo;
 }
 body.clara section .card.active .bottom-bar {
   border-bottom: 2px solid rgba(214, 214, 220, 0.253);
 }
 body.clara section .pack {
   font-size: 1.1rem;
+  font-family: titulos;
 }
 @media (max-width: 280px) {
   body.clara section ul {
@@ -586,7 +588,7 @@ body.clara section .pack {
     display: flex;
     flex-direction: column;
   }
-  body.clara section .card {
+  body.clara section .cardo {
     transform: scale(0.8);
     margin-bottom: 1rem;
   }
@@ -602,7 +604,7 @@ body.clara section .pack {
     display: flex;
     flex-direction: column;
   }
-  body.clara section .card {
+  body.clara section .cardo {
     margin-bottom: 1rem;
   }
   body.clara section .cards .card.active {
@@ -614,7 +616,7 @@ body.clara section .pack {
     display: flex;
     flex-direction: column;
   }
-  body.clara section .card {
+  body.clara section .cardo {
     margin-bottom: 1rem;
   }
   body.clara section .cards .card.active {
@@ -622,7 +624,7 @@ body.clara section .pack {
   }
 }
 @media (min-width: 414px) and (max-width: 768px) {
-  body.clara section .card {
+  body.clara section .cardo {
     margin-bottom: 1rem;
     margin-right: 1rem;
   }
@@ -634,7 +636,7 @@ body.clara section .pack {
   body.clara section .cards {
     display: flex;
   }
-  body.clara section .card {
+  body.clara section .cardo {
     margin-bottom: 1rem;
     margin-right: 1rem;
   }
