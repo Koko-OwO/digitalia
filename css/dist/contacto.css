@@ -130,13 +130,15 @@ body .layer button {
 }
 body .layer .button_slide {
   color: #FFF;
-  border: 2px solid rgb(216, 2, 134);
+  border: 2px solid #d80286;
   padding: 18px 36px;
   display: inline-block;
   font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
   box-shadow: inset 0 0 0 0 #D80286;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
 body .layer .slide_right:hover {
@@ -153,7 +155,7 @@ body .footer_fondo {
   height: auto;
 }
 body .footer_fondo .logo_redes {
-  background-color: rgb(194, 189, 189);
+  background-color: #c2bdbd;
   width: 25rem;
   height: 25rem;
   border-radius: 50%;
@@ -279,4 +281,4 @@ body .contact {
   align-items: center;
   height: 30rem;
   color: white;
-}/*# sourceMappingURL=contacto.css.map */
+}

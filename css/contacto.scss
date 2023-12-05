@@ -25,19 +25,67 @@ $colortres: #b686cd;
 }
 
 body {
+
+
+  nav{
+    position:sticky;
+    top: 0;
+    z-index: 200;
+    background-color: $coloruno;
+    color: white;
+   .navbar-brand {
+    display: flex;
+    justify-content: center;
+   }
+
+   .dropdown-menu {
+background-color: $colordos;
+   }
+   
+    .collapse {
+       
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+   
+    }
+    a {
+        color: white !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        font-family: parrafo;
+    }
+    a::after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    @media (min-width:764px) {
+   .ola {
+    display: none;
+   }
+   .olados {
+    width: 10rem;
+   }
+    }
+
+    @media (max-width:763px) {
+        .olados {
+            display: none;
+          }
+    }
+}
+
+
   .container-fluid {
     background-color: $coloruno;
     height: auto;
 
-    .nav {
-      height: 6rem;
-      a {
-        text-decoration: none;
-        color: white;
-        font-family: titulos;
-        font-size: 2rem;
-      }
-    }
+
 
     .logo {
       width: 7rem;
