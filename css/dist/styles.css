@@ -207,10 +207,6 @@ body.clara .body__card_back input {
 body.clara .body__card_back input:hover {
   box-shadow: 10px 10px 30px -5px #406aa8;
 }
-body.clara .text-center {
-  font-size: 2rem;
-  padding: 1rem 8rem 1rem 8rem;
-}
 body.clara .text-center2 {
   font-size: 1.4rem;
   background-color: rgba(0, 0, 0, 0.4);
