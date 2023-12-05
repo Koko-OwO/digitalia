@@ -35,83 +35,65 @@
 
 
 
-    <nav class="navbar d-flex justify-content-evenly px-5 col-xl-12 col-lg-12 col-md-12" id="nav">
-
-        <a class="logospadre" href="">
-            <img class="logosss" src="assets/svg/casa.svg" alt="">
-            <ul>inicio</ul>
-        </a>
-
-
-
-        <a class="logospadre" class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar">
-            <img class="logosss" src="assets/svg/herra.svg" alt="">
-            <ul>
-                servicios
-            </ul>
-        </a>
-
-        <div class="offcanvas offcanvas-end colorofcanvas" id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Servicios</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="fotografia.html">Fotografía</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="videografia.html">Videografía</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Animación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Marketing</a>
-                    </li>
-                    <li class="nav-item">
-
-                    </li>
-
+    <nav class="navbar navbar-expand-md  ">
+        <div class="container-fluid d-flex justify-content-center">
+          <a class="navbar-brand ola" href="#"><img src="assets/Logo Digitalia en negativo.png" width="100" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="paquetes.html">Paquetes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Navegar
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#quienes">¿Quiénes somos?</a></li>
+                  <li><a class="dropdown-item" href="#servicios">Servicios</a></li>
+                  <li><a class="dropdown-item" href="#nosotros">Nosotros</a></li>
+                  <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
                 </ul>
+              </li>
 
-            </div>
+              <a class="navbar-brand olados" href="#"><img src="assets/Logo Digitalia en negativo.png" width="100" alt=""></a>
+              
+              <li class="nav-item">
+                <a class="nav-link " href="www.digitalia.com.co/flipbook">Flipbook</a>
+              </li>
+           
+              <li class="nav-item">
+                <a class="nav-link " href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
 
 
 
 
-
-        <a href="">
-            <ul><img src="assets/Logo Digitalia en negativo.png" width="100%" alt="" class="logo"></ul>
-        </a>
-
-        <a class="logospadre" href="clientes.html">
-            <img class="logosss" src="assets/svg/pc.svg" alt="">
-            <ul>Clientes</ul>
-        </a>
-
-        <a class="logospadre" href="contacto.html">
-            <img class="logosss" src="assets/svg/cel.svg" alt="">
-            <ul>contacto</ul>
-        </a>
-
-    </nav>
-
-
-
-    <section class="container nosotros">
+    <section class="container nosotros" id="quienes">
         <div class="row">
-            <div class="col-12 text-center">
+
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-flex justify-content-center  my-4 gatoSubiendo">
+                 <h1><b>¿Quiénes somos?</b></h1>
+            </div>
+            <p class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-flex justify-content-center text-center my-4">
+                DIGITALIA es una empresa dedicada a la creación de contenido de multimedia enfocado a la publicidad,
+                donde nos concentramos en crear estrategias visuales y de marketing altamente eficientes con resultados
+                inmediatos.
+            </p>
+
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center my-4">
                 <h1>
                     ¿A qué nos dedicamos?
                 </h1>
             </div>
 
-            <div class="col-12 text-center">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center my-4">
                 <p>
                     Digitalia: Expertos en multimedia publicitaria. Creatividad e innovación se encuentran en el corazón
                     de nuestros servicios. Desde contenido cautivador hasta estrategias de marketing digital, impulsamos
@@ -120,10 +102,16 @@
                 </p>
             </div>
 
-            <div class="col-4">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center my-4" id="servicios">
+                <h1>
+                    servicios
+                </h1>
+            </div>
+
+            <div class=" col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 my-4" >
                 <img src="assets/una.webp" alt="" width="100%">
             </div>
-            <div class="col-8 text-center   ">
+            <div class=" col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 text-center  my-4  ">
                 <h1>
                     Ilustración
                 </h1>
@@ -155,7 +143,7 @@
 
             <div class="col-6 row">
                 <div class="col-12">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1kGJMZ0s0iM?si=ldodzLM6YdV4pJ0m"
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1kGJMZ0s0iM?si=ldodzLM6YdV4pJ0m"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -185,90 +173,20 @@
 
 
 
-    <section class="si">
-      
-            <header>
-                <h1>Paquetes</h1>
-                <div class="toggle">
-                    <label>Annually </label>
-                    <div class="toggle-btn">
-                        <input type="checkbox" class="checkbox" id="checkbox" />
-                        <label class="sub" id="sub" for="checkbox">
-                            <div class="circle"></div>
-                        </label>
-                    </div>
-                    <label> Monthly</label>
-                </div> 
-            </header>
-            <div class="cards">
-                <div class="cardo shadow losque">
-                    <ul>
-                        <li class="pack">PLAN SEMILLA DIGITAL</li>
-                        <li id="basic" class="price bottom-bar">&dollar;700.000</li>
-                        <b><p>
-                            Contiene un paso a paso inicial:</p></b>
-                        <li class="bottom-bar">Creación de logo, isologo, slogan</li>
-                        <li class="bottom-bar">Brochure</li>
-                        <li class="bottom-bar">Estrategía inicial de marketing</li>
-                        <li class="bottom-bar">Bases de hosting y dominio</li>
-                        <li class="bottom-bar">Fotografía inicial</li>
-                        <li><button class="btn">Contactar</button></li>
-                    </ul>
-                </div>
-                <div class="cardo shadow losque">
-                    <ul>
-                        <li class="pack">PLAN DE CRECIMIENTO DIGITAL</li>
-                        <li id="professional" class="price bottom-bar">&dollar;1'8000.000</li>
-                        <b><p>
-                            Contiene un paso a paso inicial
-en duplas:</p></b>
-                        <li class="bottom-bar">Rediseño de logo, isologo, slogan</li>
-                        <li class="bottom-bar">Estrategía de marketing</li>
-                        <li class="bottom-bar">Bases de hosting y dominio</li>
-                        <li class="bottom-bar">Actualización página</li>
-                        <li class="bottom-bar">Fotografía</li>
-                        <li><button class="btn">Contactar</button></li>
-                    </ul>
-                </div>
-                <div class="cardo shadow losque">
-                    <ul>
-                        <li class="pack">PLAN DE COSECHA DIGITAL</li>
-                        <li id="master" class="price bottom-bar">&dollar;3'200.000</li>
-                        <!-- <p>Este plan es para microempresas
-                            que ya están conformadas,
-                            cuentan con un grupo de
-                            empleados y necesitan de la
-                            ayuda completa para recoger la
-                            cosecha de clientes.
-                            &nbsp;</p> -->
+    
 
-                            <b><p>
-                            Contiene una campaña individual:</p></b>
-
-                        <li class="bottom-bar">Campaña de marketing</li>
-                        <li class="bottom-bar">Fotografía y video</li>
-                        <li class="bottom-bar">Edición piezas publicitarias</li>
-                        <li><button class="btn">Contactar</button></li>
-                    </ul>
-                </div>
-            </div>
-    </section>
 
     <section class="container mt-5">
 
 
 
 
-        <main class="row d-flex justify-content-center " id="inicio">
+        <main class="row d-flex justify-content-center " id="nosotros">
 
             <h1 class="col-12 d-flex justify-content-center  gatoSubiendo">
-                <b>¿Quiénes somos?</b>
+                <b>Nosotros</b>
             </h1>
-            <p class="col-12 d-flex justify-content-center text-center">
-                DIGITALIA es una empresa dedicada a la creación de contenido de multimedia enfocado a la publicidad,
-                donde nos concentramos en crear estrategias visuales y de marketing altamente eficientes con resultados
-                inmediatos.
-            </p>
+       
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 container__card mt-5 gatoSubiendo">
 
                 <div class="card__father">
@@ -458,7 +376,7 @@ en duplas:</p></b>
         <img src="assets/svg/whatsapp.svg" alt="">
     </a>
 
-    <footer class="footer container-fluid mt-5">
+    <footer class="footer container-fluid mt-5" id="contacto">
         <section class="row footer_fondo">
             <div class="col-12 contact">
                 <h1>Contáctanos</h1>

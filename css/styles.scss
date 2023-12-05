@@ -32,6 +32,7 @@ body.clara {
         justify-content: center;
         align-items: center;
         text-align: center;
+        flex-direction: row;
     }
     p {
         font-family: parrafo;
@@ -39,6 +40,7 @@ body.clara {
         justify-content: center;
         align-items: center;
         text-align: center;
+        flex-direction: column;
     }
     .hero {
         background-image: url(../assets/intro.gif);
@@ -55,15 +57,36 @@ body.clara {
         justify-content: center;
         align-items: center;
 
-        .logo {
-            width: 25rem;
 
-            position: relative;
-            top: 50%;
-            z-index: 200;
-            filter: drop-shadow(5px 8px 1.5px black);
-            top: 0;
+        @media (min-width:425px) {
+            .logo {
+                width: 25rem;
+                margin: auto;
+    
+                position: relative;
+                top: 50%;
+                z-index: 200;
+                filter: drop-shadow(5px 8px 1.5px black);
+                top: 0;
+            }
         }
+
+        @media (max-width:424px) {
+            .logo {
+                width: 15rem;
+                margin: auto;
+    
+                position: relative;
+                top: 50%;
+                z-index: 200;
+                filter: drop-shadow(5px 8px 1.5px black);
+                top: 0;
+            }
+        }
+
+        
+
+
     }
 
     .flecha {
@@ -106,64 +129,7 @@ body.clara {
         flex-direction: row;
     }
 
-    nav {
-        position: sticky;
-        top: 0px;
-        background-color: $coloruno;
-        z-index: 100;
-        margin-bottom: 5rem;
-        display: flex;
-        flex-wrap: wrap;
 
-        .logo {
-            width: 5rem;
-            height: 2rem;
-            position: absolute;
-            top: 900px;
-            z-index: 200;
-            position: sticky;
-            top: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        ul {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .colorofcanvas {
-            background-color: $colordos;
-        }
-        .canvas-body {
-            z-index: 50;
-        }
-
-        .offcanvas-header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-
-            li {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-            }
-        }
-    }
 
     .contrainer__card {
         margin: auto;
@@ -530,7 +496,7 @@ body.clara {
         text-align: center;
     }
 
-    section {
+    .si {
         header {
             color: hsl(233, 13%, 49%);
             margin: 3.3rem 0;
@@ -735,5 +701,70 @@ body.clara {
                 transform: scale(1);
             }
         }
+    }
+
+
+    nav{
+        position:sticky;
+        top: 0;
+        z-index: 200;
+        background-color: $coloruno;
+        color: white;
+       .navbar-brand {
+        display: flex;
+        justify-content: center;
+       }
+
+       .dropdown-menu {
+background-color: $colordos;
+       }
+       
+        .collapse {
+           
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+       
+        }
+        a {
+            color: white !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            font-family: parrafo;
+        }
+        a::after {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        @media (min-width:764px) {
+       .ola {
+        display: none;
+       }
+       .olados {
+        width: 10rem;
+       }
+        }
+
+        @media (max-width:763px) {
+            .olados {
+                display: none;
+              }
+        }
+    }
+
+  
+
+
+    @media (max-width:763px) {
+        .col-sm-12 ,.col-12 {
+            font-size: 15px;
+            padding: 0;
+        }
+
     }
 }

@@ -29,6 +29,7 @@ body.clara h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: row;
 }
 body.clara p {
   font-family: parrafo;
@@ -36,6 +37,7 @@ body.clara p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
 }
 body.clara .hero {
   background-image: url(../assets/intro.gif);
@@ -51,13 +53,27 @@ body.clara .hero {
   justify-content: center;
   align-items: center;
 }
-body.clara .hero .logo {
-  width: 25rem;
-  position: relative;
-  top: 50%;
-  z-index: 200;
-  filter: drop-shadow(5px 8px 1.5px black);
-  top: 0;
+@media (min-width: 425px) {
+  body.clara .hero .logo {
+    width: 25rem;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    z-index: 200;
+    filter: drop-shadow(5px 8px 1.5px black);
+    top: 0;
+  }
+}
+@media (max-width: 424px) {
+  body.clara .hero .logo {
+    width: 15rem;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    z-index: 200;
+    filter: drop-shadow(5px 8px 1.5px black);
+    top: 0;
+  }
 }
 body.clara .flecha {
   max-width: 3.5rem;
@@ -94,57 +110,6 @@ body.clara .logospadre {
   justify-content: center;
   align-content: center;
   flex-direction: row;
-}
-body.clara nav {
-  position: sticky;
-  top: 0px;
-  background-color: #406aa8;
-  z-index: 100;
-  margin-bottom: 5rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-body.clara nav .logo {
-  width: 5rem;
-  height: 2rem;
-  position: absolute;
-  top: 900px;
-  z-index: 200;
-  position: sticky;
-  top: 0;
-}
-body.clara nav a {
-  text-decoration: none;
-  color: #fff;
-}
-body.clara nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body.clara nav .colorofcanvas {
-  background-color: #668dd3;
-}
-body.clara nav .canvas-body {
-  z-index: 50;
-}
-body.clara nav .offcanvas-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-body.clara nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-body.clara nav ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 body.clara .contrainer__card {
   margin: auto;
@@ -450,7 +415,7 @@ body.clara figcaption {
   font-family: parrafo;
   text-align: center;
 }
-body.clara section header {
+body.clara .si header {
   color: hsl(233, 13%, 49%);
   margin: 3.3rem 0;
   display: flex;
@@ -458,20 +423,20 @@ body.clara section header {
   justify-content: center;
   align-items: center;
 }
-body.clara section .toggle {
+body.clara .si .toggle {
   margin-top: 2rem;
   color: hsl(234, 14%, 74%);
   display: flex;
   align-items: center;
   display: none;
 }
-body.clara section .toggle-btn {
+body.clara .si .toggle-btn {
   margin: 0 1rem;
 }
-body.clara section .checkbox {
+body.clara .si .checkbox {
   display: none;
 }
-body.clara section .sub {
+body.clara .si .sub {
   background: linear-gradient(135deg, rgb(163, 168, 240) 0%, rgb(105, 111, 221) 100%);
   display: flex;
   justify-content: flex-start;
@@ -483,29 +448,29 @@ body.clara section .sub {
   border-radius: 1.6rem;
   padding: 0.3rem;
 }
-body.clara section .circle {
+body.clara .si .circle {
   background-color: #fff;
   height: 1.4rem;
   width: 1.4rem;
   border-radius: 50%;
 }
-body.clara section .checkbox:checked + .sub {
+body.clara .si .checkbox:checked + .sub {
   justify-content: flex-end;
 }
-body.clara section .cards {
+body.clara .si .cards {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-body.clara section .cardo {
+body.clara .si .cardo {
   background: #fff;
   color: hsl(233, 13%, 49%);
   border-radius: 0.8rem;
   height: auto;
   margin: 20px;
 }
-body.clara section .cards .cardo.active {
+body.clara .si .cards .cardo.active {
   background: linear-gradient(135deg, rgb(163, 168, 240) 0%, rgb(105, 111, 221) 100%);
   color: #fff;
   display: flex;
@@ -513,14 +478,14 @@ body.clara section .cards .cardo.active {
   transform: scale(1.1);
   z-index: 1;
 }
-body.clara section ul {
+body.clara .si ul {
   margin: 2.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-body.clara section ul li {
+body.clara .si ul li {
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -528,18 +493,18 @@ body.clara section ul li {
   padding: 1rem 0;
   text-align: center;
 }
-body.clara section ul li.price {
+body.clara .si ul li.price {
   font-size: 3rem;
   color: hsl(232, 13%, 33%);
   padding-bottom: 2rem;
 }
-body.clara section .shadow {
+body.clara .si .shadow {
   box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
 }
-body.clara section .cardo.active .price {
+body.clara .si .cardo.active .price {
   color: #fff;
 }
-body.clara section .btn {
+body.clara .si .btn {
   margin-top: 1rem;
   height: 2.6rem;
   width: 13.3rem;
@@ -553,94 +518,145 @@ body.clara section .btn {
   border: 0;
   font-weight: bold;
 }
-body.clara section .active-btn {
+body.clara .si .active-btn {
   background: #fff;
   color: hsl(237, 63%, 64%);
 }
-body.clara section .bottom-bar {
+body.clara .si .bottom-bar {
   border-bottom: 2px solid hsla(240, 8%, 85%, 0.582);
   text-align: center;
   font-family: parrafo;
 }
-body.clara section .card.active .bottom-bar {
+body.clara .si .card.active .bottom-bar {
   border-bottom: 2px solid hsla(240, 8%, 85%, 0.253);
 }
-body.clara section .pack {
+body.clara .si .pack {
   font-size: 1.1rem;
   font-family: titulos;
 }
 @media (max-width: 280px) {
-  body.clara section ul {
+  body.clara .si ul {
     margin: 1rem;
   }
-  body.clara section h1 {
+  body.clara .si h1 {
     font-size: 1.2rem;
   }
-  body.clara section .toggle {
+  body.clara .si .toggle {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 80px;
   }
-  body.clara section .cards {
+  body.clara .si .cards {
     margin: 0;
     display: flex;
     flex-direction: column;
   }
-  body.clara section .cardo {
+  body.clara .si .cardo {
     transform: scale(0.8);
     margin-bottom: 1rem;
   }
-  body.clara section .cards .card.active {
+  body.clara .si .cards .card.active {
     transform: scale(0.8);
   }
 }
 @media (min-width: 280px) and (max-width: 320px) {
-  body.clara section ul {
+  body.clara .si ul {
     margin: 20px;
   }
-  body.clara section .cards {
+  body.clara .si .cards {
     display: flex;
     flex-direction: column;
   }
-  body.clara section .cardo {
+  body.clara .si .cardo {
     margin-bottom: 1rem;
   }
-  body.clara section .cards .card.active {
+  body.clara .si .cards .card.active {
     transform: scale(1);
   }
 }
 @media (min-width: 320px) and (max-width: 414px) {
-  body.clara section .cards {
+  body.clara .si .cards {
     display: flex;
     flex-direction: column;
   }
-  body.clara section .cardo {
+  body.clara .si .cardo {
     margin-bottom: 1rem;
   }
-  body.clara section .cards .card.active {
+  body.clara .si .cards .card.active {
     transform: scale(1);
   }
 }
 @media (min-width: 414px) and (max-width: 768px) {
-  body.clara section .cardo {
+  body.clara .si .cardo {
     margin-bottom: 1rem;
     margin-right: 1rem;
   }
-  body.clara section .cards .card.active {
+  body.clara .si .cards .card.active {
     transform: scale(1);
   }
 }
 @media (min-width: 768px) and (max-width: 1046px) {
-  body.clara section .cards {
+  body.clara .si .cards {
     display: flex;
   }
-  body.clara section .cardo {
+  body.clara .si .cardo {
     margin-bottom: 1rem;
     margin-right: 1rem;
   }
-  body.clara section .cards .card.active {
+  body.clara .si .cards .card.active {
     transform: scale(1);
+  }
+}
+body.clara nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background-color: #406aa8;
+  color: white;
+}
+body.clara nav .navbar-brand {
+  display: flex;
+  justify-content: center;
+}
+body.clara nav .dropdown-menu {
+  background-color: #668dd3;
+}
+body.clara nav .collapse {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+body.clara nav a {
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-family: parrafo;
+}
+body.clara nav a::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 764px) {
+  body.clara nav .ola {
+    display: none;
+  }
+  body.clara nav .olados {
+    width: 10rem;
+  }
+}
+@media (max-width: 763px) {
+  body.clara nav .olados {
+    display: none;
+  }
+}
+@media (max-width: 763px) {
+  body.clara .col-sm-12, body.clara .col-12 {
+    font-size: 15px;
+    padding: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
