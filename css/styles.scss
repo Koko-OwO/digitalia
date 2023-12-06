@@ -821,4 +821,29 @@ background-color: $colordos;
         }
         
     }
+    #bat {
+        background-image: url(../assets/decen.png);
+        
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center center;
+        background-attachment: fixed;
+        position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            width: 100%;
+            height: 102%;
+            backdrop-filter: blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
 }
