@@ -6,7 +6,14 @@ window.onload = function () {
   document.getElementById("contenido").style.display = "block";
 };
 
+document.addEventListener("DOMContentLoaded", function () {
+  var preloaderVideo = document.querySelector(".videocarga video");
 
+  preloaderVideo.addEventListener("loadeddata", function () {
+      // Video de carga cargado, oculta el preloader
+      document.getElementById("preloader").style.display = "none";
+  });
+}); 
 
 
 const animationImages = document.querySelectorAll('.gatoSubiendo');

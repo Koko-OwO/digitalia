@@ -26,6 +26,7 @@ $colortres: #b686cd;
 
 body.clara {
     background-color: white;
+  
     h1 {
         font-family: titulos;
         display: flex;
@@ -44,7 +45,7 @@ body.clara {
     }
     .hero {
         background-image: url(../assets/intro.gif);
-
+        
         height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
@@ -56,6 +57,7 @@ body.clara {
         display: flex;
         justify-content: center;
         align-items: center;
+        
 
 
         @media (min-width:425px) {
@@ -68,6 +70,9 @@ body.clara {
                 z-index: 200;
                 filter: drop-shadow(5px 8px 1.5px black);
                 top: 0;
+                // backdrop-filter: blur(10px);
+                
+                
             }
         }
 
@@ -290,6 +295,7 @@ body.clara {
 
                     transition: all 0.7s;
                     z-index: -20;
+                    opacity: 0;
                 }
             }
 
@@ -307,6 +313,7 @@ body.clara {
                     display: inline;
                     transition: all 0.7s;
                     z-index: 10;
+                    opacity:1;
                 }
             }
 
@@ -320,6 +327,7 @@ body.clara {
 
                     transition: all 0.7s;
                     z-index: -20;
+                    opacity:0;
                 }
             }
 
@@ -337,6 +345,7 @@ body.clara {
                     display: inline;
                     transition: all 0.7s;
                     z-index: 10;
+                    opacity:1;
                 }
             }
 
@@ -350,6 +359,7 @@ body.clara {
 
                     transition: all 0.7s;
                     z-index: -20;
+                    opacity:0;
                 }
             }
 
@@ -367,6 +377,7 @@ body.clara {
                     display: inline;
                     transition: all 0.7s;
                     z-index: 10;
+                    opacity:1;
                 }
             }
 
@@ -380,6 +391,7 @@ body.clara {
 
                     transition: all 0.7s;
                     z-index: -20;
+                    opacity:0;
                 }
             }
 
@@ -397,6 +409,7 @@ body.clara {
                     display: inline;
                     transition: all 0.7s;
                     z-index: 10;
+                    opacity:1;
                 }
             }
 
@@ -763,5 +776,49 @@ background-color: $colordos;
             padding: 0;
         }
 
+    }
+
+    @media (min-width:763px) {
+        .col-sm-12 ,.col-12 {
+            font-size: 20px;
+            padding: 0;
+        }
+
+    }
+    .min {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        min-height: 20rem;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #servicios {
+        background-image: url(../assets/decen.png);
+        
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center center;
+        background-attachment: fixed;
+        position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            width: 100%;
+            height: 102%;
+            backdrop-filter: blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
     }
 }

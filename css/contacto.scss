@@ -26,7 +26,21 @@ $colortres: #b686cd;
 
 body {
 
+  .gatoSubiendo {
+    position: relative;
+    top: 70px;
 
+    /* transform: translateX(0%); */
+    opacity: 0;
+    transition:
+        top 1s ease-in,
+        opacity 1s ease-in;
+}
+
+.animate-in {
+    top: 0;
+    opacity: 1;
+}
   nav{
     position:sticky;
     top: 0;

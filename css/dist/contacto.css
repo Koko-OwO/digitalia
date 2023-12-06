@@ -20,6 +20,17 @@
   cursor: url("../assets/cursor.svg"), pointer;
 }
 
+body .gatoSubiendo {
+  position: relative;
+  top: 70px;
+  /* transform: translateX(0%); */
+  opacity: 0;
+  transition: top 1s ease-in, opacity 1s ease-in;
+}
+body .animate-in {
+  top: 0;
+  opacity: 1;
+}
 body nav {
   position: sticky;
   top: 0;
