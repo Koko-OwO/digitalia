@@ -437,19 +437,7 @@ body.clara {
     #inicio {
         background-color: white;
     }
-    .videocarga {
-        z-index: 999;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        top: 0px;
-        left: 100%;
-        animation-name: logo;
-        animation-iteration-count: 1;
-        animation-duration: 6s;
-        display: none;
-        background-color: black;
-    }
+
 
     @keyframes logo {
         from {
@@ -720,10 +708,15 @@ body.clara {
         z-index: 200;
         background-color: $coloruno;
         color: white;
+        .dropdown-item:hover {
+            color: #406aa8 !important;
+          }
        .navbar-brand {
         display: flex;
         justify-content: center;
        }
+
+     
 
        .dropdown-menu {
 background-color: $colordos;
