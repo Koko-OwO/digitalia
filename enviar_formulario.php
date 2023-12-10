@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   mail($destinatario, $asunto, $cuerpoMensaje);
 
   // Redirigir a una página de agradecimiento
-  header("Location: gracias.html");
+  header("Location: gracias/index.html");
 } else {
   // Si alguien intenta acceder a este archivo directamente, redirige al formulario
   header("Location: contacto.html");

@@ -1,0 +1,144 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #130d0a;
+
+  color: #fff;
+
+}
+
+@font-face {
+  font-family: titulos;
+  src: url(../assets/fonts/ViceCitySans-Bold.otf);
+}
+@font-face {
+  font-family: subtitulos;
+  src: url(../assets/fonts/ViceCitySans-Light.otf);
+}
+@font-face {
+  font-family: parrafo;
+  src: url(../assets/fonts/JosefinSans-VariableFont_wght.ttf);
+}
+.custom-cursor {
+  cursor: url("../assets/cursor.svg"), pointer;
+}
+
+#hero {
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+#content {
+  background-color: #668dd3;
+}
+
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  position: fixed;
+  z-index: -1;
+}
+
+#hero-mobile {
+  display: none;
+  background: url("../asssets/fotografias/cincogrande.jpg") no-repeat center bottom/cover;
+  height: 320px;
+}
+
+.first-section {
+  padding: 50px 0 20px 0;
+}
+
+.text-header {
+  font-size: 50px;
+  text-align: center;
+}
+
+h1 {
+  line-height: 120%;
+  margin-bottom: 30px;
+  font-family: "titulos";
+  font-size: 50px;
+}
+
+p {
+  color: #ede0d5;
+  font-size: 21px;
+  line-height: 150%;
+  font-family: "parrafo";
+}
+
+#hero,
+.layer {
+  min-height: 1000px;
+  max-width: 1900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.layer-bg {
+  background-image: url("fondogracias.jpg");
+  filter: grayscale(1) blur(5px) brightness(50%);
+  background-size: cover;
+  
+}
+
+.layer-1 {
+  background-image: url("");
+  background-position: left bottom;
+}
+
+.layer-2 {
+  background-image: url("../assets/Logo\ Digitalia\ en\ negativo.png");
+  background-size: 1000px;
+  background-position: center;
+}
+/*personaje*/
+.layer-3 {
+  /* background-image: url("../assets/usable.gif"); */
+  background-size: 300px;
+  background-position: right bottom;
+}
+
+.layer-4 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png");
+  background-size: contain;
+}
+
+.layer-overlay {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png");
+}
+
+@media only screen and (max-width: 1000px) {
+ 
+  .layer-2 {
+    background-image: url("../assets/Logo\ Digitalia\ en\ negativo.png");
+    background-size: 450px;
+    background-position: center;
+  }
+  
+}
+.tutorial-link {
+
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  
+  border: solid 1px #fff;
+  margin: 7px;
+  padding: 7px;
+  border-radius: 50px;
+  font-family: "parrafo";
+  
+}
+.tutorial-link:hover {
+  color: #ede0d5;
+}
+
+section {
+  margin-top: 10rem;
+}
